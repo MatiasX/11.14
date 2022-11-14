@@ -112,4 +112,25 @@ body{
     padding: 1.5rem 0;
     font-size: .8rem;
     line-height: 1.5;
+    display: inline-block;
+}
+#boxes .box .box-content>a{
+    text-decoration: none;
+    background-color: rgb(134, 182, 4);
+    color: white;
+    padding: .5rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+@media (min-width:576px)
+{
+    #boxes .box{
+        margin: 0;
+    }
+    #boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
 }
