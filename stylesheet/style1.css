@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
+}
+img{
+    width: 100%;
 }
 html{
     font-size: 16px;
@@ -20,6 +23,10 @@ body{
 }
 #nav{
     background-color: rgb(134, 182, 4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #nav::after{
     content:'';
@@ -64,4 +71,45 @@ body{
 }
 #hamburger-button:checked ~ ul li:not(:first-child){
     display: block;
+}
+#main{
+    margin-top: 4rem;
+}
+#main h1{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#main>img{
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+    display: block;
+    width: 50%;
+}
+#main>p{
+    line-height: 1.7;
+    font-size: 1.2rem;
+}
+#main>h2{
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 3rem;
+}
+#boxes{
+    margin-top: 2rem;
+}
+#boxes .box{
+    margin-bottom: 1rem;
+    background-color: white;
+}
+#boxes .box .box-content{
+    padding: 1rem;
+}
+#boxes .box .box-content>h3{
+    font-size: 1.5rem;
+}
+#boxes .box .box-content>p{
+    padding: 1.5rem 0;
+    font-size: .8rem;
+    line-height: 1.5;
 }
